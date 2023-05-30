@@ -1,0 +1,26 @@
+// Take a number and display whether it is prime
+// Date : 30-MAY-2023
+
+#include <stdio.h>
+
+void main()
+{
+ int num,i , prime = 1;
+
+     printf("Enter number :");
+     scanf("%d", &num);
+
+     for(i = 2; i <= num/2 ; i ++)
+     {
+         if(num % i == 0)
+         {
+             printf("Not a prime number because %d is a factor!", i);
+             prime = 0;
+             break;
+         }
+     }
+
+     if (prime == 1)
+         printf("Prime Number!");
+
+}
