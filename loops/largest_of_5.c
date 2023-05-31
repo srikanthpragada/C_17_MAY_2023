@@ -5,16 +5,16 @@
 
 void main()
 {
- int num,i, largest = 0;
+ int num, i, smallest;
 
      for(i = 1; i <= 5 ; i ++)
      {
          printf("Enter number :");
          scanf("%d", &num);
 
-         if(num > largest)
-             largest = num;
+         if(num < smallest)
+             smallest = num;
      }
 
-     printf("Largest = %d", largest);
+     printf("Smallest = %d", smallest);
 }
