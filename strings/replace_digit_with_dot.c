@@ -14,6 +14,5 @@ void main()
           if (isdigit(st[i]))
                 st[i] = '.';
      }
-
      puts(st);
 }
