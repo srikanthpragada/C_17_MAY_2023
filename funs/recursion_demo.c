@@ -12,6 +12,14 @@ void reverse(int num)
   }
 }
 
+int factorial(int n)
+{
+  if (n == 1)
+    return 1;
+  else
+    return n * factorial(n - 1);
+}
+
 void print_reverse(int num)
 {
 
@@ -19,6 +27,9 @@ void print_reverse(int num)
 
 void main()
 {
-    reverse(5);
+    //reverse(5);
+    printf(" %d  ", factorial(5));
+
+
 }
 
